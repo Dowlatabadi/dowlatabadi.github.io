@@ -15,9 +15,9 @@ timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Chirpy                          # the main title
+title: Mehrdad Dowlatabadi                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Independent Researcher|Game Developer   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -30,14 +30,14 @@ url: ''
 author: your_full_name                  # change to your full name
 
 github:
-  username: github_username             # change to your github username
+  username: Dowlatabadi             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: MehrdadDowlata2           # change to your twitter username
 
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  name: Mehrdad Dowlatabadi                  # it will shows as the copyright owner in Footer
+  email: m.dowlatabadi.ce@gmail.com            # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username      # change to your twitter homepage
@@ -81,7 +81,7 @@ theme_mode:   # [light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
+avatar: #https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
