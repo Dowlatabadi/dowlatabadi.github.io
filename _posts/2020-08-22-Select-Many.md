@@ -1,6 +1,9 @@
 ---
 layout: post
-title: Select Many!
+title: Select Many
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
+categories: [Programming, C#]
+tags: [SelectMany]     # TAG names should always be lowercase
 ---
 
 .NET SelectMany extension method in short, **selects many items for each item**! that's it.
@@ -9,10 +12,10 @@ I know it wasn't enough but it is a good point to start with. if you give a glim
 
 Let's go through shorset first, the method signature is :
 
-{% highlight cs %}
+```cs
 public static IEnumerable<TR> SelectMany<TS,TR> 
 (this IEnumerable<TS> source, Func<TS,IEnumerable<TR>> selector)
-{% endhighlight %}
+```
 
 
 By investigating the signature, you can comprehend 3 main points:
