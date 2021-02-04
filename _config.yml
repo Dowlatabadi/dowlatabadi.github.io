@@ -81,7 +81,7 @@ theme_mode:   # [light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https:mehrdadodwlwatabadi.com/images/omg.jpg
+avatar: https:mehrdadowlatabadi.com/images/omg.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
