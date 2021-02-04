@@ -12,10 +12,10 @@ I know it wasn't enough but it is a good point to start with. if you give a glim
 
 Let's go through shorset first, the method signature is :
 
-```cs
+{% highlight cs %}
 public static IEnumerable<TR> SelectMany<TS,TR> 
 (this IEnumerable<TS> source, Func<TS,IEnumerable<TR>> selector)
-```
+{% endhighlight %}
 
 
 By investigating the signature, you can comprehend 3 main points:
