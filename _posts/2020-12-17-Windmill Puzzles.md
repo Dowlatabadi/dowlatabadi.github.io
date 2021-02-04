@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Windmill Puzzles!
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: [Games, Puzzles]
 tags: [WindMill Puzzles]     # TAG names should always be lowercase
 ---

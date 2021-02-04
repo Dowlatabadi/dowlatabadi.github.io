@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Select Many
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: [Programming, C#]
 tags: [SelectMany]     # TAG names should always be lowercase
 ---
