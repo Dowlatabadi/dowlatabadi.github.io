@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Windmill Puzzles!
+image:
+  src: ({{site.url}}/../images/Windmill-puzzles-lvl25.jpg)
+  alt: WindMill Puzzles by Mehrdad Dowlatabadi
 categories: [Games, Puzzles]
 tags: [WindMill Puzzles]     # TAG names should always be lowercase
 ---

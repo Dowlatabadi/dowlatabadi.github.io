@@ -27,7 +27,7 @@ By investigating the signature, you can comprehend 3 main points:
 
 Let's try it :
 We have a list of father names each of which have many children :
-{% highlight cs %}
+```cs
 var origin=new List<Tuple<string,List<string>>>(){
 Tuple.Create("fath1",new List<string>(){"jimmy","catrina"}),
 Tuple.Create("fath2",new List<string>(){"lance","andy"}),
@@ -44,15 +44,15 @@ catrina
 lance
 andy
 */
-{% endhighlight %}
+```
 
 We just passed a function that converts input tuple to list of children and the result is list of all children.
 
 Ok, lets find out how another overload works:
 
-{% highlight cs %}
+```c#
 public static IEnumerable<TResult> SelectMany<TSource,TResult> (this IEnumerable<TSource> source, Func<TSource,int,IEnumerable<TResult>> selector)
-{% endhighlight %}
+```
 
 The difference with the first overload is that the function accepts another input as integer. and it is the index, so we can use it for the output. note that index refers to TScource typed items. lets see how it works:
 
