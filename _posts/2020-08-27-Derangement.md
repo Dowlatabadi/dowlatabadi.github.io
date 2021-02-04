@@ -13,7 +13,7 @@ the only permution that all elements are in right place is a,b,c. Ok, let's see 
 3!=6 
 
 let's write down all 6 permutions:
-```cs
+```r
 * a,b,c
   a,c,b
   b,a,c
@@ -46,8 +46,8 @@ Count(a dp,b dp,c dp)=Count(a or b or c dp)[3!-1] - 3*Count(exact 2 inplace)[3*0
 
 lets assume we know D(n-1), now we want calc D(n), OK one element is added.
 
-one derangement is like: [][][][][][][][] {} we can exchange new element with oe of the old elements. so for every derangement we can have (n-1) new derangement: D(n-1)(n-1). 
-Can we have more derangements? yes we can assume a be in his natural place: a[][][][][][][][] and other elements are not, now if we exchange a and {} we still have a new derrangement. so we need to count D(n-2) and for each of them we can pick a,b,.. as right element and finally replace {} with right one: D(n-2)*(n-1) 
+one derangement is like: `[][][][][][][][] {}` we can exchange new element with oe of the old elements. so for every derangement we can have `(n-1)` new derangement: `D(n-1)(n-1)`. 
+Can we have more derangements? yes we can assume a be in his natural place: `a[][][][][][][][]` and other elements are not, now if we exchange a and {} we still have a new derrangement. so we need to count D(n-2) and for each of them we can pick a,b,.. as right element and finally replace {} with right one: `D(n-2)*(n-1)` 
 
 Now we have: 
 ```r
