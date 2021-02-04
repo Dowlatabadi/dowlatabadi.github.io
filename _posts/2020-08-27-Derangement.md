@@ -50,9 +50,9 @@ One derangement is like: `[][][][][][][][] {}` we can exchange new element with 
 Can we have more derangements? yes we can assume a be in its natural place: `a[][][][][][][][]` and other elements are not, now if we exchange a and `{}` we still have a new derrangement. so we need to count `D(n-2)` and for each of them we can pick `a,b,..` as right element and finally replace `{}` with the right one: `D(n-2)*(n-1)` 
 
 Now we have: 
-```r
-D(n)=D(n-2)*(n-1)+D(n-1)(n-1)
-```
+
+$$D(n)=D(n-2)*(n-1)+D(n-1)(n-1)$$
+
 
 
 And ofcourse we can also write recursive and brute force code to calc derangement.
