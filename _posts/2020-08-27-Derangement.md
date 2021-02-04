@@ -12,14 +12,14 @@ the only permution that all elements are in right place is a,b,c. Ok, let's see 
 3!=6 
 
 let's write down all 6 permution:
-{% raw %}
+```cs
 * a,b,c
   a,c,b
   b,a,c
 + b,c,a
 + c,a,b
   c,b,a
-{% endraw %}
+```
 
 what is specific about + signed permutations? they call it "Derangement" and that means all of the elements are displaced from the natural position.
 ok now we want to count all of the derangements.it can be done by using inclution-exclusion principle, recursion thinking or counting exact displaced elements.
