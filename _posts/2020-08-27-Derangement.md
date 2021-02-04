@@ -47,7 +47,7 @@ Count(a dp,b dp,c dp)=Count(a or b or c dp)[3!-1] - 3*Count(exact 2 inplace)[3*0
 Lets assume we know `D(n-1)`, now we want calculate `D(n)`, clearly one element is added.
 
 One derangement is like: `[][][][][][][][] {}` we can exchange new element with oe of the old elements. Therefore for every derangement we can have `(n-1)` new derangement: `D(n-1)(n-1)`. 
-Can we have more derangements? yes we can assume a be in its natural place: `a[][][][][][][][]` and other elements are not, now if we exchange a and `{}` we still have a new derrangement. so we need to count `D(n-2)` and for each of them we can pick `a,b,..` as right element and finally replace `{}` with right one: `D(n-2)*(n-1)` 
+Can we have more derangements? yes we can assume a be in its natural place: `a[][][][][][][][]` and other elements are not, now if we exchange a and `{}` we still have a new derrangement. so we need to count `D(n-2)` and for each of them we can pick `a,b,..` as right element and finally replace `{}` with the right one: `D(n-2)*(n-1)` 
 
 Now we have: 
 ```r
