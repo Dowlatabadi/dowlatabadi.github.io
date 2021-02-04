@@ -4,13 +4,14 @@ title: Derangement!
 categories: [Mathematics, Combinatorics]
 tags: [Derangement]  
 toc: true
+math: true
 ---
 
 Let's assume we have three items called a,b,c and we know their natural order, each of them belongs to which place. a belongs to first place and so on..  
 
 The only permution that all elements are in right place is a,b,c. Ok, let's see how many permution we can have:
 
-`3!=6 `
+$$3!=6$$
 
 What are all 6 permutions:
 ```r
@@ -33,14 +34,13 @@ exactly 3 elements are displaced: 2
 exactly 2 elements are displaced: 3
 exactly 1 element is displaced: 0
 exactly 0 element is displaced: 1
-
-so D(3 elemnts)=2
 ```
+so $$D(3)=2$$
 
 ## Using Inclusion-Exclusion Principle
-```r
-Count(a dp,b dp,c dp)=Count(a or b or c dp)[3!-1] - 3*Count(exact 2 inplace)[3*0]+Count(exact 1 inplace)[3]=2
-```
+
+$$Count(a dp,b dp,c dp)=Count(a or b or c dp)[3!-1] - 3*Count(exact 2 inplace)[3*0]+Count(exact 1 inplace)[3]=2$$
+
 
 ## Recursive Counting
 
