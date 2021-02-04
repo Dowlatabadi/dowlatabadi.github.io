@@ -1,8 +1,6 @@
 ---
 layout: post
-title: Select Many
-categories: [Programming, C#]
-tags: [SelectMany]     # TAG names should always be lowercase
+title: Select Many!
 ---
 
 .NET SelectMany extension method in short, **selects many items for each item**! that's it.

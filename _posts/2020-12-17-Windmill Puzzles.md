@@ -1,12 +1,6 @@
 ---
 layout: post
 title: Windmill Puzzles!
-image:
-  src: ({{site.url}}/../images/Windmill-puzzles-lvl25.jpg)
-  alt: WindMill Puzzles by Mehrdad Dowlatabadi
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
-categories: [Games, Puzzles]
-tags: [WindMill Puzzles]     # TAG names should always be lowercase
 ---
 
 <style type="text/css">
