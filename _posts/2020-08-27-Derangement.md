@@ -24,6 +24,8 @@ let's write down all 6 permution:
 what is specific about + signed permutations? they call it "Derangement" and that means all of the elements are displaced from the natural position.
 ok now we want to count all of the derangements.it can be done by using inclution-exclusion principle, recursion thinking or counting exact displaced elements.
 
+#Counting All Possibilities
+
 exactly 3 elements are displaced: 2
 exactly 2 elements are displaced: 3
 exactly 1 element is displaced: 0
@@ -31,12 +33,12 @@ exactly 0 element is displaced: 1
 
 so D(3 elemnts)=2
 
-ex-in pcpl:
+#ex-in pcpl:
 
 Count(a dp,b dp,c dp)=Count(a or b or c dp)[3!-1] - 3Count(exact 2 inplace)[3*0]+Count(exact 1 inplace)[3]=2
 
 
-recursive:
+#recursive:
 
 lets assume we know D(n-1), now we want calc D(n), OK one element is added.
 
