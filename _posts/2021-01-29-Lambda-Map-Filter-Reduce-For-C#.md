@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Lambda-Map-Filter-Reduce-For-C#!
+categories: [Programming, C#]
+tags: [Lambda Functions,Reduce,Aggregate,Where,Filter,List Comprehension,Python,C#]   
 ---
 
 Quick look at equvalents of usefull functionalities in c#:

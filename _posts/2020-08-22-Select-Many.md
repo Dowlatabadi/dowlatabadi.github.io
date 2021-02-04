@@ -50,13 +50,13 @@ We just passed a function that converts input tuple to list of children and the 
 
 Ok, lets find out how another overload works:
 
-```c#
+```cs
 public static IEnumerable<TResult> SelectMany<TSource,TResult> (this IEnumerable<TSource> source, Func<TSource,int,IEnumerable<TResult>> selector)
 ```
 
 The difference with the first overload is that the function accepts another input as integer. and it is the index, so we can use it for the output. note that index refers to TScource typed items. lets see how it works:
 
-{% highlight cs %}
+```cs
 
 var res=origin.SelectMany((source,Fatherindex)=>source.Item2.Select(child=>Fatherindex+"<<"+child)).ToList();
 	
@@ -70,13 +70,12 @@ output is:
 1<<lance
 1<<andy
 */
-{% endhighlight %}
+```
 
 What if i wanted to print father names alongside of his child name?
 by using first overload we can do this:
 
-{% highlight cs %}
-
+```cs
 var res=origin.SelectMany(source=>source.Item2.Select(child=>source.Item1+"<<"+child)).ToList();
 /*
 output is:
@@ -85,11 +84,11 @@ fath1<<catrina
 fath2<<lance
 fath2<<andy
 */
-{% endhighlight %}
+```
 It traverses like a two dependent for loop.
 
 Ok, let's think what will happen if we use another list instead of children's name, some predefined constant list. well things get interesting: 
-{% highlight cs %}
+```cs
 
 var somelist=new List<string>(){"A","B","C"};
 var origin=new List<Tuple<string,List<string>>>(){
@@ -109,7 +108,7 @@ fath2<<A
 fath2<<B
 fath2<<C
 */
-{% endhighlight %}
+```
 
 As you ca see, it is like a two independent nested loop.
 
