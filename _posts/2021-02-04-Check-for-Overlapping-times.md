@@ -6,7 +6,7 @@ tags: [Timespan Overlap,Fast Overlap Checking,De Morgan's laws]
 mermaid: true 
 ---
 
-A long time ago I wanted to check if two timespans are overlapping each other. The question looks actually simple but, It gets tricky in implementation, even when you are checking conditions against database value you need to find an optimized solution. one Intuitive approach is to find out if the first timespan start is within the second timespan or again first timespan end is within second one's boundaries.
+A long time ago I wanted to check if two timespans are overlapping each other. The question looks actually simple but, It gets tricky in implementation, specially when you are checking conditions against database value you need to find an optimized solution. one Intuitive approach is to find out if the first timespan start is within the second timespan or again first timespan end is within second one's boundaries.
 
 ## The first timespan start is within the second timespan
 ```mermaid
