@@ -37,7 +37,7 @@ mermaid: true
 : append `/` indicator to directories
 
 -F
-:  append indicator (one of */=>@|) to entries
+:  append indicator (one of `*/=>@|`) to entries
 
 
 ###  ls -F and output prefixes meaning
