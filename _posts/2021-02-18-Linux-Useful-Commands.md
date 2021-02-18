@@ -95,4 +95,17 @@ ps au | grep 'vscode' | awk '{print $3}'
 ```
 `$3` grabs the 3rd column of output
 
+use first 5 most cpu consuming processes:
+```bash
+ps -Ao user,uid,comm,pid,pcpu,tty --sort=-pcpu | head -n 6
+```
+or only:
+```bash
+ps -A --sort=-pcpu | head -n 6
+```
+
+get pid and name most cpu consuming:
+```bash
+ps -A --sort=-pcpu | head -n +2 | awk '{if(NR>1)print $1"  "$4}'
+```
 
