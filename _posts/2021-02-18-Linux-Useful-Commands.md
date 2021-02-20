@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Linux Useful Commands - ls, grep, pipe, ps
+title: Linux Useful Commands - ls, grep, pipe, ps, for, sleep,head, tail
 categories: [Linux, Useful Commands]
-tags: [Linux,Linux Terminal,pipe,bash,grep,ls,symlinks,ps,linux process status]
+tags: [Linux,Linux Terminal,pipe,bash,grep,ls,symlinks,ps,linux process status,inline shell script,sleep,for,shell script,inline bash script,head,tail]
 mermaid: true 
 ---
 
