@@ -71,7 +71,7 @@ piping to head command to show last **most recently modified file or directory**
 ```bash
 ls -t | head -1
 ```
-piping to head command to show largest **file**:
+piping to head command to **show largest file**:
 ```bash
 ls -l -h -S | head -1
 ```
@@ -104,8 +104,12 @@ or only:
 ps -A --sort=-pcpu | head -n 6
 ```
 
-get pid and name most cpu consuming:
+get pid and name **most cpu consuming process**:
 ```bash
 ps -A --sort=-pcpu | head -n +2 | awk '{if(NR>1)print $1"  "$4}'
 ```
 
+get pid and name **most cpu consuming proccess continuously** with delays in between:
+```bash
+for i in {1..10}; do ps -Ao pcpu,comm --sort=-pcpu | head -n 2; sleep 5s; done;
+```

@@ -6,7 +6,7 @@ tags: [Lambda Functions,Reduce,Aggregate,Where,Filter,List Comprehension,Python,
 mermaid: true 
 ---
 
-Quick look at equvalents of usefull functionalities in c#:
+Quick look at equvalents of useful functionalities in c#:
 
 
 |                   C#                   |                                Python                                |
