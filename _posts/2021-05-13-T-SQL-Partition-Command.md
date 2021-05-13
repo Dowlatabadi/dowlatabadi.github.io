@@ -45,4 +45,4 @@ delete from cte where row1>1
 
 ### Other Use Cases:
 
-It can be used to find the rank( or distant to max/min) of each row in coresponding partition or group based of defined fields.
+It can be used to find the rank( or calculate the distant to max/min) of each row in coresponding partition or group based of defined fields.
